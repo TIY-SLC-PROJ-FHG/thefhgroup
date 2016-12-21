@@ -1,3 +1,4 @@
+// Related to scrollbar functionality
 $(document).ready(function() {
 	$('a[href*=#]:not([href=#])').click(function() {
   	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -20,7 +21,7 @@ $(document).ready(function() {
       $('.scroll-top').fadeOut();
     }
   });
-  
+
   //Click event to scroll to top
   $('.scroll-top').click(function(){
     $('html, body').animate({scrollTop : 0},700);
