@@ -2152,6 +2152,76 @@ section {
     padding: 3.5rem 0;
   }
 }
+.wrap {
+  *zoom: 1;
+  width: auto;
+  max-width: 1200px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 0 2rem;
+  z-index: 20;
+  position: relative;
+}
+.wrap:before,
+.wrap:after {
+  content: '';
+  display: table;
+}
+.wrap:after {
+  clear: both;
+}
+@media only screen and (max-width: 600px) {
+  .wrap {
+    padding: 0 1.25rem;
+  }
+}
+.wrap-small {
+  *zoom: 1;
+  width: auto;
+  max-width: 80%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 0 2rem;
+  z-index: 20;
+  position: relative;
+}
+.wrap-small:before,
+.wrap-small:after {
+  content: '';
+  display: table;
+}
+.wrap-small:after {
+  clear: both;
+}
+@media only screen and (max-width: 800px) {
+  .wrap-small {
+    *zoom: 1;
+    width: auto;
+    max-width: 100%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .wrap-small:before,
+  .wrap-small:after {
+    content: '';
+    display: table;
+  }
+  .wrap-small:after {
+    clear: both;
+  }
+}
 .hero {
   background: #fff;
   background-image: url("../img/family-main.jpg");
